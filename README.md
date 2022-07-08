@@ -126,7 +126,7 @@ To reference a published module, a go.mod file would typically omit the replace 
 require github.com/greetings v1.1.0
 
 
-9. At the command prompt in the hello directory, run your code to confirm that it works.
+9. At the command prompt in the hello directory, run your code to confirm that it works. What would happen if the function were not capitalized?
 $ go run .
 
 Output:
