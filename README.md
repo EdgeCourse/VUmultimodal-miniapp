@@ -453,32 +453,3 @@ $ hello.exe
 map[Bobby:Great to see you, Bobby! Trent:Hail, Trent! Welcome! Sadio:Hail, Sadio! Welcome!]
 You've compiled the application into an executable so you can run it. But to run it currently, your prompt needs either to be in the executable's directory, or to specify the executable's path.
 
-21. Install the executable so you can run it without specifying its path. Discover the Go install path, where the go command will install the current package. You can discover the install path by running the go list command, as in the following example:
-
-$ go list -f '{{.Target}}'
-
-For example, the command's output might say /home/gopher/bin/hello, meaning that binaries are installed to /home/gopher/bin. You'll need this install directory in the next step.
-
-22. Add the Go install directory to your system's shell path so you can run your program's executable without specifying where the executable is.
-
-On Linux or Mac, run the following command:
-$ export PATH=$PATH:/path/to/your/install/directory
-
-On Windows, run the following command:
-$ set PATH=%PATH%;C:\path\to\your\install\directory
-
-As an alternative, if you already have a directory like $HOME/bin in your shell path and you'd like to install your Go programs there, you can change the install target by setting the GOBIN variable using the go env command:
-
-$ go env -w GOBIN=/path/to/your/bin
-
-or
-
-$ go env -w GOBIN=C:\path\to\your\bin
-
-Once you've updated the shell path, run the go install command to compile and install the package.
-$ go install
-
-Run your application by simply typing its name. To make this interesting, open a new command prompt and run the hello executable name in some other directory.
-
-$ hello
-map[Bobby:Hail, Bobby! Welcome! Trent:Great to see you, Trent! Sadio:Hail, Sadio! Welcome!]
