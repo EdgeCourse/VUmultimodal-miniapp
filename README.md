@@ -135,7 +135,7 @@ Hi, Trent. Welcome!
 You now have two functioning modules.
 
 
-10: Return a random greeting: change the code so that instead of returning a single greeting every time, it returns one of several predefined greeting messages. Use a Go slice. A slice is like an array, except that its size changes dynamically as you add and remove items. The slice is one of Go's most useful types. Add a small slice to contain three greeting messages, then have your code return one of the messages randomly.
+10: Return a random greeting and add error checking: change the code so that instead of returning a single greeting every time, it returns one of several predefined greeting messages. Use a Go slice. A slice is like an array, except that its size changes dynamically as you add and remove items. The slice is one of Go's most useful types. Add a small slice to contain three greeting messages, then have your code return one of the messages randomly.
 
 In greetings/greetings.go, change your code to:
 
