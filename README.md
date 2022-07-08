@@ -1,10 +1,11 @@
 # VUmultimodal-miniapp
 
-In this application, we write Go code, create Go packages and modules, write Go unit tests with regular expressions and bench tests, and compile and install the Go application. 
+In this application, we write Go code, create Go packages and modules, write Go unit tests with regular expressions and bench tests, and compile and install the Go application. You can start with a directory that you name github.com
 
 1. Create a greetings directory for your Go module source code.
 
 mkdir greetings
+
 cd greetings
 
 2. Start your module using the go mod init command.
