@@ -111,7 +111,7 @@ After the command completes, the github.com/hello module's go.mod file should lo
 
 module github.com/hello
 
-go 1.16
+go 1.18
 
 replace github.com/greetings => ../greetings
 
