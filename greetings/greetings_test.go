@@ -26,9 +26,22 @@ func TestHelloEmpty(t *testing.T) {
 	}
 }
 
+//go tool cover
+//go test -cover
+
+//go test -bench=.
+//go test -run=HelloName -bench=.
+
 func BenchmarkHelloName(b *testing.B) {
 	// run the Hello function b.N times
 	for n := 0; n < b.N; n++ {
 		Hello("Trent")
+	}
+}
+
+func BenchmarkHelloOtherName(b *testing.B) {
+	// run the Hello function b.N times
+	for n := 0; n < b.N; n++ {
+		Hello("Andy")
 	}
 }
